@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SMILE DESIGN | Premium Dental Clinic</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header id="mainHeader">
+  <div class="container nav-flex">
+    <div class="logo-container">
+      <img src="images/logo.png" alt="SMILE DESIGN Logo" class="main-logo">
+    </div>
+    <nav class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#location">Location</a>
+      <a href="#" class="btn btn-nav" id="bookBtn">Book Appointment</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-content reveal-left">
+        <span class="eyebrow">Excellence in Dentistry</span>
+        <h2>Modern Care for Your Family’s Smile</h2>
+        <p>Experience a new standard of dental care with our state-of-the-art technology and patient-focused approach.</p>
+        <div class="hero-actions">
+          <a href="#services" class="btn">Our Services</a>
+          <a href="#location" class="btn btn-outline">Visit Us</a>
+        </div>
+      </div>
+      <div class="hero-image reveal-right">
+        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=1200" alt="Modern Clinic">
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-title-area reveal-up">
+        <h3>Our Expertise</h3>
+        <p>Comprehensive solutions for every dental need.</p>
+      </div>
+
+      <div class="grid">
+        <div class="card reveal-up">
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&q=80&w=500" alt="Whitening">
+          </div>
+          <h4>Esthetic Whitening</h4>
+          <p>Brighten your smile with our safe, professional laser whitening treatments.</p>
+        </div>
+
+        <div class="card reveal-up">
+          <div class="card-img-wrapper">
+            <img src="images/mainvisual.jpg" alt="Checkups">
+          </div>
+          <h4>Preventive Care</h4>
+          <p>Regular checkups and cleanings to maintain optimal oral health for life.</p>
+        </div>
+
+        <div class="card reveal-up">
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1468493858157-0da44aaf1d13?auto=format&fit=crop&q=80&w=500" alt="Implants">
+          </div>
+          <h4>Dental Implants</h4>
+          <p>Permanent, natural-looking tooth replacement using premium titanium.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="clinic-info reveal-up" id="location">
+    <div class="container info-grid">
+      <div class="info-details">
+        <h3>Visit Our Clinic</h3>
+        <div class="time-schedule">
+          <h4>Clinic Hours</h4>
+          <ul>
+            <li>Monday: 9:00 AM - 7:00 PM</li>
+            <li>Tuesday: 9:00 AM - 7:00 PM</li>
+            <li>Wednesday: 9:00 AM - 7:00 PM</li>
+            <li>Thursday: 9:00 AM - 7:00 PM</li>
+            <li>Friday: 9:00 AM - 7:00 PM</li>
+            <li>Saturday & Sunday: Closed</li>
+          </ul>
+        </div>
+        <div class="address-box">
+          <h4>Address</h4>
+          <p>3-chōme-23-16 Hongō, Bunkyo City, Tokyo 113-0033, Japan</p>
+        </div>
+      </div>
+      <div class="map-wrapper">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.927284793649!2d139.7622569768565!3d35.70586137257963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c6ee2336a6f%3A0xcf29a945b309301c!2z5p2x5Lqs5Yy755mC56eY5pu45q2v56eR6KGb55SfJklU5bCC6ZaA5a2m5qCh!5e0!3m2!1sja!2sjp!4v1714567890123!5m2!1sja!2sjp" 
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h3>Online Booking</h3>
+    <p>Please select your preferred service and time.</p>
+    <form id="bookForm">
+      <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" placeholder="Your Name" required>
+      </div>
+      <div class="form-group">
+        <label>Service</label>
+        <select required>
+          <option value="">Select a service</option>
+          <option value="checkup">General Checkup</option>
+          <option value="whitening">Whitening</option>
+          <option value="implant">Dental Implants</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Preferred Date</label>
+        <input type="date" required>
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" placeholder="email@example.com" required>
+      </div>
+      <button type="submit" class="btn">Confirm Appointment</button>
+    </form>
+  </div>
+</div>
+
+<footer class="footer">
+  <p>&copy; 2026 SMILE DESIGN. Crafted for Excellence.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
